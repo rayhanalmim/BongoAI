@@ -1,6 +1,6 @@
 export const awsConfig = {
     region: process.env.AWS_REGION || 'us-east-1',
-    bearerToken: process.env.AWS_BEARER_TOKEN_BEDROCK,
+    bearerToken: process.env.NEXT_PUBLIC_AWS_BEARER_TOKEN_BEDROCK,
 };
 
 export const modelCategories = {
@@ -13,10 +13,11 @@ export type CategoryKey = keyof typeof modelCategories;
 
 export const bedrockModels = {
     // Text Generation Models
-    'claude-opus-4': {
-        id: 'anthropic.claude-opus-4-20250514-v1:0',
-        name: 'Claude Opus 4',
-        description: 'Most advanced model with hybrid reasoning and extended thinking',
+    
+    'claude-3-7-sonnet': {
+        id: 'anthropic.claude-3-7-sonnet-20250219-v1:0',
+        name: 'Claude 3.7 Sonnet',
+        description: 'Enhanced version of Claude 3 with improved capabilities',
         maxTokens: 8192,
         category: 'text' as CategoryKey,
         type: 'text',
@@ -25,14 +26,6 @@ export const bedrockModels = {
         id: 'anthropic.claude-sonnet-4-20250514-v1:0',
         name: 'Claude Sonnet 4',
         description: 'Advanced model with efficient code generation and text generation',
-        maxTokens: 8192,
-        category: 'text' as CategoryKey,
-        type: 'text',
-    },
-    'claude-3-7-sonnet': {
-        id: 'anthropic.claude-3-7-sonnet-20250219-v1:0',
-        name: 'Claude 3.7 Sonnet',
-        description: 'Enhanced version of Claude 3 with improved capabilities',
         maxTokens: 8192,
         category: 'text' as CategoryKey,
         type: 'text',
