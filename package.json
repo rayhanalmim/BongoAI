@@ -12,12 +12,15 @@
     "@aws-sdk/client-bedrock": "^3.844.0",
     "@aws-sdk/client-bedrock-runtime": "^3.844.0",
     "@headlessui/react": "^2.2.4",
+    "@types/js-cookie": "^3.0.6",
     "clsx": "^2.1.1",
+    "js-cookie": "^3.0.5",
     "lucide-react": "^0.525.0",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-hot-toast": "^2.5.2"
+    "react-hot-toast": "^2.5.2",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
